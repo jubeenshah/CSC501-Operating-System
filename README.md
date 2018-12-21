@@ -2,7 +2,7 @@
 
 ![](./10-NCSU-Logo.png)
 
-#Contents
+# Contents
 * [Assignments](#Assignments)
 * [Notes (OSTEP)](#Notes)
 * [Sample Tests](#Sample-Tests)
@@ -29,7 +29,7 @@
 
 # Notes
 
-Notes are not ordered in a particular order. I just divided the notes in a way that helped me study for the final exam. The following are the links to the Chapters for OSTEP PDFs and then also the notes that I made for the respective chapters
+Notes are not ordered in a particular order. I just divided the notes in a way that helped me study for the final exam. The following are the links to the Chapters for OSTEP PDFs and then also the notes that I made for the [respective chapters](http://pages.cs.wisc.edu/~remzi/OSTEP/)
 
 * [Chapter 2, 4, 5, 6](./Notes/01-12-2018/)
 	* [Notes](./Notes/01-12-2018/CH2,4,5,6.pdf)
