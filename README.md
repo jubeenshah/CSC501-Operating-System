@@ -54,8 +54,8 @@ Notes are not ordered in a particular order. I just divided the notes in a way t
 
 #Sample Tests
 In this I just provide the sample tests that were provided to us. The sample Mid-term and the Sample Final with the solutions given to us.
-* [Sample Midterm](./Sample-tests/Sample-Midterm.pdf) [Key](./Sample-tests/Sample-Midterm-Key.pdf)
-* [Sample Final](./Sample-tests/Sample-Final.pdf) [Key](./Sample-tests/Sample-Final-Key.pdf)
+* [Sample Midterm](./Sample-tests/Sample-Midterm.pdf) [[Key]](./Sample-tests/Sample-Midterm-Key.pdf)
+* [Sample Final](./Sample-tests/Sample-Final.pdf) [[Key]](./Sample-tests/Sample-Final-Key.pdf)
 
 #Slides
 
