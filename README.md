@@ -10,7 +10,7 @@
 * [Cheat-Sheet](#Cheat-Sheet)
 * [Remzi-Homework]()
 
-#Assignments
+# Assignments
 
 * PA0 -- The objective of this introductory lab is to get familiarize with the process of compiling and running XINU, the tools involved, and the run-time environment and segment layout. (Scored 91)
 	* Link -- [CSC501-PA0](./Assignments/PA0)
@@ -27,7 +27,7 @@
 * PA3 -- In PA3, you are going to implement readers/writer locks as described in this handout. Additionally, you will implement a priority inheritance mechanism to prevent the priority inversion problem when using locks.
 	* Link -- [CSC501-PA3](./Assignments/PA3)
 
-#Notes
+# Notes
 
 Notes are not ordered in a particular order. I just divided the notes in a way that helped me study for the final exam. The following are the links to the Chapters for OSTEP PDFs and then also the notes that I made for the respective chapters
 
@@ -52,20 +52,20 @@ Notes are not ordered in a particular order. I just divided the notes in a way t
 * [Papers](./Notes/Papers/)
 
 
-#Sample Tests
+# Sample Tests
 In this I just provide the sample tests that were provided to us. The sample Mid-term and the Sample Final with the solutions given to us.
 * [Sample Midterm](./Sample-tests/Sample-Midterm.pdf) [[Key]](./Sample-tests/Sample-Midterm-Key.pdf)
 * [Sample Final](./Sample-tests/Sample-Final.pdf) [[Key]](./Sample-tests/Sample-Final-Key.pdf)
 
-#Slides
+# Slides
 
 The link to the slides used by Professor Jin. [Here](./Slides-20181220/)
 
-#Cheat-Sheet
+# Cheat-Sheet
 
 Since Cheat sheets are allowed. I had made one. Here's to the Lazy ones. (adapted from Steve Job's *Here's to the crazy ones*) Link -- [Cheat-Sheet](./CheatSheet/CheatSheet.pdf)
 
-#Homework-Remzi
+# Homework-Remzi
 
 I haven't solved it. But I had used them for better understanding. So Please don't look in this repo for solutions to the Homework. Sorry, but No Sorry.
 
