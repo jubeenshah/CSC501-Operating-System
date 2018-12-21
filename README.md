@@ -16,7 +16,7 @@
 	* Link -- [CSC501-PA0](./Assignments/PA0)
 * PA1 -- The objective of this assignment is to get familiar with the concepts of process management, including process priorities, scheduling, and context switching. (Scored 91)
 	* Link -- [CSC501-PA1](./Assignments/PA1)
-* PA2 -- The goal of this project is to implement the following system calls and their supporting infrastructure.
+* PA2 -- The goal of this project is to implement the following system calls and their supporting infrastructure. (Scored 90)
 	* SYSCALL xmmap (int virtpage, bsd\_t source, int npages)
 	* SYSCALL xmunmap (int virtpage)
 	* SYSCALL vcreate (int \*procaddr, int ssize, int hsize, int priority, char \*name, int nargs, long args)
@@ -24,7 +24,7 @@
 	* SYSCALL srpolicy (int policy)
 	* SYSCALL vfreemem (block\_ptr, int size\_in\_bytes)
 	* Link -- [CSC501-PA2](./Assignments/PA2)
-* PA3 -- In PA3, you are going to implement readers/writer locks as described in this handout. Additionally, you will implement a priority inheritance mechanism to prevent the priority inversion problem when using locks.
+* PA3 -- In PA3, you are going to implement readers/writer locks as described in this handout. Additionally, you will implement a priority inheritance mechanism to prevent the priority inversion problem when using locks. (Scored 76 ) :(
 	* Link -- [CSC501-PA3](./Assignments/PA3)
 
 # Notes
