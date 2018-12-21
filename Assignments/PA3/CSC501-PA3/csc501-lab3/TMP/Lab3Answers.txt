@@ -1,0 +1,27 @@
+1. After some time period S increase the priority of random threads that are ready and holding locks could be allowed to exit the critical section.
+
+2.  In the previous method, C would have to wait for A and B to release the lock, given the priorities of 25, 20, and 30 respectively.
+    When comparing the results with semaphore without using priority inheritance, we see that C would appropriate the lock from A.
+
+    lock with priority inheritance
+     W1A : to acquire lock
+     W1A : acquired lock
+     W1B : to acquire lock
+     W1A : to release lock
+     W1B : acquired lock
+     W1B : to release lock
+     W1C start to write
+     W1C write done.
+    semaphore without priority inheritance
+     W2A : to wait
+     W2A : wait
+     W2B : to wait
+     W2C start to write
+     W2C write done.
+     W2A : to signal
+     W2B : wait
+     W2B : to signal
+
+   a. do_update  -- Since, a reader lock, it would allow other threads to execute at the same time.
+   b. try_update -- The global_semaphore which is a counting semaphore initialized to 10 would not be able to protect the CS.
+   c. buffer_add -- is a writer process.

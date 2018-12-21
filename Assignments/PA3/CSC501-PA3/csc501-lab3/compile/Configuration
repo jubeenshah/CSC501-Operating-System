@@ -1,0 +1,44 @@
+/* Configuration - (device configuration specifications) */
+
+/* "type" declarations for both real- and pseudo- devices */
+
+serial:
+	on HARDWARE	-i cominit	-o ionull	-c ionull
+			-r ionull	-w comwrite	-s ioerr
+			-n comcntl	-g comgetc	-p computc
+			-iint comint	-oint ioerr
+
+/* tty pseudo-devices */
+tty:
+	on HARDWARE	-i ttyinit	-o ttyopen	-c ionull 
+			-r ttyread	-w ttywrite	-s ioerr
+			-n ttycntl	-g ttygetc	-p ttyputc
+			-iint ttyiin
+
+%
+
+/* The physical PC keyboard and monitor */
+
+CONSOLE		is tty  	on HARDWARE
+
+SERIAL0		is serial	on HARDWARE	csr 0x3f8 ivec 36
+SERIAL1		is serial	on HARDWARE	csr 0x2f8 ivec 35
+
+TTY0		is tty		on HARDWARE
+TTY1		is tty		on HARDWARE
+TTY2		is tty		on HARDWARE
+
+%
+
+/* Configuration and Size Constants */
+
+#define	LITTLE_ENDIAN	0x1234
+#define	BIG_ENDIAN	0x4321
+
+#define	BYTE_ORDER	LITTLE_ENDIAN
+
+#define	NPROC	    50			/* number of user processes	*/
+#define	NSEM	    100			/* number of semaphores		*/
+#define	MEMMARK				/* define if memory marking used*/
+#define	RTCLOCK				/* now have RTC support		*/
+#define	STKCHK				/* resched checks stack overflow*/

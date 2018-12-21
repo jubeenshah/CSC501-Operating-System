@@ -1,0 +1,70 @@
+1)Assuming the XINU text begins at address 0x0, draw a rough diagram of XINU's memory layout with addresses derived from your experimental measurements. Include the information you uncovered from running your version of printsegaddress() and printprocstks().
+
+
+	--- --------
+	 |  | Other|
+  	 |  | info |
+4096 	 |  |	   |
+pages	 |  |______|  ---
+	 |  | XINU |   |  
+	 |  | text,|   | 0-24 
+	 |  | data,|   | pages
+	 |  | bss  |   |
+	--- --------  ---
+
+REFERENCE --> https://www.csc2.ncsu.edu/faculty/xjiang4/csc501/readings/lec13-mm3.pdf
+
+
+
+
+0x00ffeff8	+-----------------------+ <--------- BASE MAIN
+		|			|	____ LIMIT MAIN
+0x00ffdffc---	|	  MAIN		| <----/
+0x00ffcffc   \->+-----------------------+ <--------- BASE  PROC A
+		|	PROC A 		|
+		|			|
+0x00ffdff8	+-----------------------+ <--------- LIMIT PROC A
+		|	FREE MEM	| 
+		+-----------------------+
+		| 	  HEAP		|
+0x000280f8	+-----------------------+
+		|	BSS  SEG	|
+0x0001e548	+-----------------------+
+		|	DATA SEG	|
+0x0001945f	+-----------------------+
+		|	TEXT SEG	|	
+0x00000000	+-----------------------+
+
+
+
+2)What is the difference in stack top address before and after calling printtos()? Draw a diagram to illustrate what are the contents of the items pushed into the stack between these two time points.
+
+
+
+Before -----> 0x00ffeff4 = 16773108
+	     -		   -			
+After  -----> 0x00ffefec = 16773100
+------------------------------------
+Difference -> 0x00000008 = 00000008
+
+Difference is 8 Bytes
+
+                     +-----------------+
+                     |  Stack  -> main | <-- Before <-- 0x00ffeff4
+                     +-----------------+
+                     |  Return -> main | 
+                     +-----------------+
+                     |  EBP    -> main | <-- After <--0x00ffefec
+                     +-----------------+
+                     |   printtos()    | <-- Local vairables
+ 		     +-----------------+
+
+
+3)In a stack frame, local variables are stored below the top of the stack. In task 3, does your result show all the local variables declared in your printtos function? If not, can you explain that? (hint: try to disable the compiler optimization by specifing -O0 in your Makefile)
+
+
+No, my result doesn't show me the local variables in my printtos function. This might be to reduce the compilation time for optimization of running of the code.
+
+Though in a small program it really doesn't make a huge difference. But as the program size goes, or the scale of the project itself increases, this optimization would result in saving a lot of compilation time.
+
+Reference: http://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html

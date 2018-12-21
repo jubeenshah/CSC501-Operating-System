@@ -1,0 +1,13 @@
+This directory contains a monitor program which supports booting Xinu
+for network using BOOTP and TFTP. It is designed to be a stand alone module.
+Thus, it contains its own Ethernet driver, ARP, BOOTP, TFTP, and 
+a simplified version of IP and UDP.
+
+TODO:	This version uses a queue of Ethernet buffers using buffer-pool.
+	Thus, it depends on buffer-pool related routines (e.g., makepool(),
+	getbuf(), freebuf(), etc.) provided in the sys directory. 
+	The next task to do is to eliminate these routines and implement
+	its own buffer management routines, thus making the monitor truly 
+	stand alone.
+
+John Lin, 07/01/95

@@ -1,0 +1,34 @@
+Write your answers to the following questions in a file named Lab1Answers.txt(in simple text). Please place this file in the sys/ directory and turn it in, along with the above programming assignment.
+
+What are the advantages and disadvantages of each of the two scheduling policies? Also, give the advantages and disadvantages of the round robin scheduling policy originally implemented in Xinu.
+	Exponential Scheduling
+		Advantages
+			* Fair scheduling because of its random nature
+			* Providing new jobs or removing existing jobs affects all jobs in an equal way
+			* No Starvation
+		Disadvantages
+			* Gaming the scheduler is a possibility
+			* Higher priority jobs tend to get a less amount of time in the CPU for processing
+			* It needs a good random gernerator, else higher number of processes in the same range might not get equal share
+	Linux Scheduling
+		Advantages
+			* No Starvation, becasue each process gets an equal amount of QUANTUM for execution unless suspended
+			* The concept of handling 'good' processes with the help of a goodness value
+		Disadvantages
+			* Complexity of the scheduler is higher than the other two under consideration
+			* A suspended process has to wait for an entire epoch to be scheduled again.
+			* The initial values for the goodness or the quantum are not set until an entire epoch has passed
+	Round Robin Scheduling
+		Advantages	
+			* Priority is a deciding factor, meaning higher priority jobs are executed first
+			* The processes which equal priorities get equal amount of time
+		Disadvantages
+			* Starvation of processes is possible if we game the scheduluer by creating high number of High Priority jobs
+		
+
+Describe the way each of the schedulers affects the NULL process.
+
+	Exponential Scheduling
+		* Since, NULL process has a priority of 0, it is never picked up by the exponential scheduler unless no other processes are deemed runnable
+	Linux Sceduling
+		* Same goes for linux like schedulers. The NULL process is picked up to be executed only when no other process are in the ready queue.
