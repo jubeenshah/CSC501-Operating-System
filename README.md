@@ -3,9 +3,11 @@
 ![](./10-NCSU-Logo.png)
 
 #Contents
-* [Assignments]()
-* [Notes (OSTEP)]()
-* [Cheat-Sheet]()
+* [Assignments](#Assignments)
+* [Notes (OSTEP)](#Notes)
+* [Sample Tests](#Sample-Tests)
+* [Slides](#Slides)
+* [Cheat-Sheet](#Cheat-Sheet)
 * [Remzi-Homework]()
 
 #Assignments
@@ -25,14 +27,14 @@
 * PA3 -- In PA3, you are going to implement readers/writer locks as described in this handout. Additionally, you will implement a priority inheritance mechanism to prevent the priority inversion problem when using locks.
 	* Link -- [CSC501-PA3](./Assignments/PA3)
 
-# Notes
+#Notes
 
 Notes are not ordered in a particular order. I just divided the notes in a way that helped me study for the final exam. The following are the links to the Chapters for OSTEP PDFs and then also the notes that I made for the respective chapters
 
 * [Chapter 2, 4, 5, 6](./Notes/01-12-2018/)
 	* [Notes](./Notes/01-12-2018/CH2,4,5,6.pdf)
 * [CH 7, 8, 9, 13, 14](./Notes/02-12-2018/)
-	* [Notes](./Notes/02-12-2018/CH 7, 8, 9, 13, 14.pdf)
+	* [Notes](./Notes/02-12-2018/CH7,8,9,13,14.pdf)
 * [CH 15, 16](./Notes/03-12-2018/)
 	* [Notes](./Notes/03-12-2018/CH15,16.pdf)
 * [CH 19, 20, 21, 22](./Notes/04-12-2018/)
@@ -47,3 +49,24 @@ Notes are not ordered in a particular order. I just divided the notes in a way t
 	* [Notes](./Notes/08-12-2018/08-12-2018.pdf)
 * [CH 50](./Notes/09-12-2018/)
 	* [Notes](./Notes/09-12-2018/CH50.pdf)
+* [Papers](./Notes/Papers/)
+
+
+#Sample Tests
+In this I just provide the sample tests that were provided to us. The sample Mid-term and the Sample Final with the solutions given to us.
+* [Sample Midterm](./Sample-tests/Sample-Midterm.pdf) [Key](./Sample-tests/Sample-Midterm-Key.pdf)
+* [Sample Final](./Sample-tests/Sample-Final.pdf) [Key](./Sample-tests/Sample-Final-Key.pdf)
+
+#Slides
+
+The link to the slides used by Professor Jin. [Here](./Slides-20181220/)
+
+#Cheat-Sheet
+
+Since Cheat sheets are allowed. I had made one. Here's to the Lazy ones. (adapted from Steve Job's *Here's to the crazy ones*) Link -- [Cheat-Sheet](./CheatSheet/CheatSheet.pdf)
+
+#Homework-Remzi
+
+I haven't solved it. But I had used them for better understanding. So Please don't look in this repo for solutions to the Homework. Sorry, but No Sorry.
+
+[Link](./HomeWork-remzi/all)
